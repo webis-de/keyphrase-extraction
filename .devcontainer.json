@@ -1,0 +1,8 @@
+{
+  "image": "webis/aitools:2009-08-08-dev",
+  "customizations": {
+    "vscode": {
+      "extensions": []
+    }
+  }
+}
