@@ -17,6 +17,9 @@ public class EndToEntTest {
     @Test
     public void rspeTfExtractorFor5Phrases() throws Exception {
         List<String> expected = Arrays.asList(
+            "{\"extractor\":\"RSPExtractorTF\",\"docno\":\"empty-01\",\"keyphrases\":{\"5\":" +
+                "[]}}",
+
             "{\"extractor\":\"RSPExtractorTF\",\"docno\":\"FBIS4-41991\",\"keyphrases\":{\"5\":"+
                 "[\"freeh\",\"fbi director\",\"east european\",\"russian crime\",\"internal affairs\",\"world\"]}}",
 
@@ -34,6 +37,9 @@ public class EndToEntTest {
     @Test
     public void rspeOfExtractorFor5Phrases() throws Exception {
         List<String> expected = Arrays.asList(
+            "{\"extractor\":\"RSPExtractorFO\",\"docno\":\"empty-01\",\"keyphrases\":{\"5\":" +
+                "[]}}",
+
             "{\"extractor\":\"RSPExtractorFO\",\"docno\":\"FBIS4-41991\",\"keyphrases\":{\"5\":"+
                 "[\"fbi director\",\"east european\",\"russian crime\",\"freeh\",\"internal affairs\",\"world\"]}}",
 
@@ -51,6 +57,9 @@ public class EndToEntTest {
     @Test
     public void BcExtractorFoExtractorFor5Phrases() throws Exception {
         List<String> expected = Arrays.asList(
+            "{\"extractor\":\"BCExtractorFO\",\"docno\":\"empty-01\",\"keyphrases\":{\"5\":" +
+                "[]}}",
+
             "{\"extractor\":\"BCExtractorFO\",\"docno\":\"FBIS4-41991\",\"keyphrases\":{\"5\":"+
                 "[\"organized postcommunist crime\",\"organized crime\",\"russian crime\",\"vladimir nadein fbi\",\"considerable number\"]}}",
 
@@ -68,6 +77,9 @@ public class EndToEntTest {
     @Test
     public void BcExtractorTfExtractorFor5Phrases() throws Exception {
         List<String> expected = Arrays.asList(
+            "{\"extractor\":\"BCExtractorTF\",\"docno\":\"empty-01\",\"keyphrases\":{\"5\":" +
+                "[]}}",
+
             "{\"extractor\":\"BCExtractorTF\",\"docno\":\"FBIS4-41991\",\"keyphrases\":{\"5\":"+
                 "[\"organized crime\",\"communism old criminal structures\",\"fbi director\",\"criminal world\",\"russian crime\"]}}",
 
@@ -85,6 +97,9 @@ public class EndToEntTest {
     @Test
     public void rspeTfExtractorFor7Phrases() throws Exception {
         List<String> expected = Arrays.asList(
+            "{\"extractor\":\"RSPExtractorTF\",\"docno\":\"empty-01\",\"keyphrases\":{\"7\":" +
+                "[]}}",
+
             "{\"extractor\":\"RSPExtractorTF\",\"docno\":\"FBIS4-41991\",\"keyphrases\":{\"7\":"+
                 "[\"collapse\",\"senate hearings\",\"ministry of internal affairs\",\"louis freeh\",\"department\",\"criminal world\",\"democracy\",\"east european\",\"russian crime\",\"number\",\"international\",\"criminal structures\",\"experts\",\"news conference\"]}}",
 

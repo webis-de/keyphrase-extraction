@@ -10,6 +10,7 @@ import java.io.Writer;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
@@ -54,7 +55,12 @@ public class App {
         for(Map.Entry<String, String> docIdToText: documents.entrySet()) {
             Map<Integer, List<String>> keyphrases = new HashMap<>();
             for (int k: numKeyphrases) {
-                keyphrases.put(k, extractor.getPhrases(docIdToText.getValue(), k));
+                try {
+                    keyphrases.put(k, extractor.getPhrases(docIdToText.getValue(), k));
+                } catch(Exception e) {
+                    keyphrases.put(k, new ArrayList<>());
+                }
+                
             }
 
             Map<String, Object> i = new HashMap<>();
